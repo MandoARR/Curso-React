@@ -23,9 +23,10 @@
             placeholder="Nombre de la persona quien deja el vehiculo"
             required
         />
-
-        <label for="modelo">Modelo:</label>
+        
+        <label for="modelo">Característica del Vehículo:</label>
         <select id="modelo" name="modelo" required> 
+            <option disabled selected>Selecciona un modelo</option>
             <option>AVANZA</option>
             <option>CAMRY</option>
             <option>CAMRY HEV</option>
@@ -47,22 +48,35 @@
             <option>YARIS</option>
             <option>YARIS SEDAN</option>
         </select>
+        <select id="transmision" name="transmision" required>
+            <option disabled selected>Selecciona el tipo de transmision</option>
+            <option>Automatico</option>
+            <option>Manual</option>
+        </select>
 
-        <label for="comida">Comida favorita:</label>
         <input 
             type="text"
-            id="comida"
-            name="comida" 
-            placeholder="Escribe tu comida favorita"
+            id="placas"
+            name="placas" 
+            placeholder=" Numero de placas Ejem. JW60261"
             required
         />
         
-        <label for="hobby">Pasatiempo:</label>
+        <label for="contacto">Contacto:</label>
+        
+        <input 
+            type="tel"
+            id="telefono"
+            name="telefono" 
+            placeholder="Numero de Telefono"
+            required
+        />
+
         <textarea 
             id="Mensaje"
             name="personaje"
             rows="4"
-            placeholder="Escribe algo que te gusta hacer"
+            placeholder=""
                     
          ></textarea>
         
