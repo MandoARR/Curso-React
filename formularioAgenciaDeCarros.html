@@ -14,7 +14,7 @@
 </head>
 <body>
     <form method="get" action="/">
-        <h1 style="text-align: center;">Servicio Daltom</h1>
+        <h1 style="text-align:center; color:firebrick;">Servicio Daltom</h1>
         <label for="nombre">Nombre:</label>
         <input 
             type="text"
@@ -72,16 +72,48 @@
             required
         />
 
+        <input 
+            type="email"
+            id="email"
+            name="email" 
+            placeholder="Ingresa un correo electronico test@test.com"
+            required
+        />
+
+        <label for="modelo">Tipo de Servicio:</label>
+        <!--
+        afinacion
+        <input
+        type="checkbox"
+        id="servicio_afinacion"
+        name="servicio_afinacion"
+        />
+
+        frenos
+        <input
+        type="checkbox"
+        id="servicio_frenos"
+        name="servicio_frenos"
+        />
+        -->
+        <select id="servicio" name="servicio" required>
+            <option disabled selected>Selecciona el tipo de servicio</option>
+            <option>Afinacion</option>
+            <option>Frenos</option>
+            <option>Revision de puntos de seguridad</option>
+            <option>General</option>
+        </select>
+
         <textarea 
             id="Mensaje"
             name="personaje"
             rows="4"
-            placeholder=""
+            placeholder="¿Requiere de otro servicio o comentarios adicionales?"
                     
          ></textarea>
         
         <button type="submit">Enviar</button>
-        <button type="rest">Limpiar</button>
+        <button type="reset">Limpiar</button>
 
     </form>
 </body>
